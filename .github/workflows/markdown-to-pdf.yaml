@@ -20,7 +20,7 @@ jobs:
 
       - name: Convert Markdown to PDF
         run: |
-          pandoc docs/ -o output.pdf
+          pandoc docs/test.md -o output.pdf
 
       - name: upload PDF as artifact
         uses: actions/upload-artifact@v4
